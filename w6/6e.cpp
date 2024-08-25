@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-int countAnagramPairs(int N, vector<string>& S) {
+int solve(int N, vector<string>& S) {
     unordered_map<string, int> countMap;
     int result = 0;
 
@@ -29,7 +29,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         cin >> S[i];
     }
-    cout << countAnagramPairs(N, S) << endl;
+    cout << solve(N, S) << endl;
 
     return 0;
 }
