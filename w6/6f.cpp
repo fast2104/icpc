@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int findPisanoPeriod(int B) {
+int solve(int B) {
     int prev = 0, curr = 1;
     for (int i = 0; i < B * B; i++) {
         int temp = (prev + curr) % B;
@@ -21,7 +21,7 @@ int main() {
     while (T--) {
         int B;
         cin >> B;
-        cout << findPisanoPeriod(B) << endl;
+        cout << solve(B) << endl;
     }
     
     return 0;
